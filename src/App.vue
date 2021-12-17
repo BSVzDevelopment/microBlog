@@ -7,7 +7,7 @@
                     @input="title = $event.target.value"
                     class="input"
                     type="text"
-                    placeholder="Введите название">
+                    placeholder="Введите название!">
             <input
                     v-bind:value="body"
                     @input="body = $event.target.value"

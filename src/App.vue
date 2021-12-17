@@ -7,7 +7,7 @@
                     @input="title = $event.target.value"
                     class="input"
                     type="text"
-                    placeholder="Введите название!">
+                    placeholder="Введите название">
             <input
                     v-bind:value="body"
                     @input="body = $event.target.value"
@@ -18,7 +18,7 @@
             <button class="btn" v-on:click="createPost">Создать</button>
         </form>
         <div v-if="posts.length !==0">
-
+<!-- 
             <transition-group name="post-list">
                 <div class="post" v-for="(post, idx) in posts">
                     <div> ({{ idx + 1}}) <strong>Название:</strong> {{ post.title }}</div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-            </transition-group>
+            </transition-group> -->
         </div>
         <div v-if="posts.length === 0" class="allert">Записей пока нет</div>
         <div class="observer" ref="observer"></div>

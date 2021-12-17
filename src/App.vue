@@ -31,6 +31,7 @@
                     </div>
                 </div>
             </transition-group> -->
+            <button>Нажми на меня</button>
         </div>
         <div v-if="posts.length === 0" class="allert">Записей пока нет</div>
         <div class="observer" ref="observer"></div>

@@ -19,7 +19,7 @@
         </form>
         <div v-if="posts.length !==0">
 <!-- 
-            <transition-group name="post-list">
+            <transition-group name="post-list">!!!
                 <div class="post" v-for="(post, idx) in posts">
                     <div> ({{ idx + 1}}) <strong>Название:</strong> {{ post.title }}</div>
                     <div><strong>Краткое описание:</strong> {{ post.body }}</div>

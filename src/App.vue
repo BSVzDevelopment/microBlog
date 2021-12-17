@@ -13,7 +13,7 @@
                     @input="body = $event.target.value"
                     class="input"
                     type="text"
-                    placeholder="Добавьте описание">
+                    placeholder="Добавьте описание.я">
 
             <button class="btn" v-on:click="createPost">Создать</button>
         </form>

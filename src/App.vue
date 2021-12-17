@@ -19,8 +19,8 @@
         </form>
         <div v-if="posts.length !==0">
 
-            <transition-group name="post-list">!!!
-                <!-- <div class="post" v-for="(post, idx) in posts">
+            <transition-group name="post-list">
+                <div class="post" v-for="(post, idx) in posts">
                     <div> ({{ idx + 1}}) <strong>Название:</strong> {{ post.title }}</div>
                     <div><strong>Краткое описание:</strong> {{ post.body }}</div>
                     <div><strong>Комментарии:</strong> {{ post.comment }}</div>
@@ -29,12 +29,12 @@
                             <button class="postBtn" @click="removePost(idx)">Удалить</button>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </transition-group>
         </div>
         <div v-if="posts.length === 0" class="allert">Записей пока нет</div>
         <div class="observer" ref="observer"></div>
-        <!--        <div class="page__wrapper">-->
+               <div class="page__wrapper">
         <div
                 :key="pageNumber"
                 class="page"
@@ -42,7 +42,7 @@
                      'current-page' : page === pageNumber
                  } "
         > {{ pageNumber }} </div>
-        <!--        </div>-->
+               </div>
     </div>
 </template>
 
